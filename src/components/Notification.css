@@ -1,0 +1,31 @@
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    color: white;
+    padding: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+  }
+  /* .alt-alert{
+    display:flex;
+    color:yellow;
+  } */
+  .logo img {
+    height: 30px;
+    width: 30px;
+  }
+  .book-link{
+    color:yellow;
+    text-decoration: none;
+  }
+  .close-btn {
+    cursor: pointer;
+    color:yellow;
+  }
+  
+  .alert.hidden {
+    background-color: yellow;
+  }
+  
