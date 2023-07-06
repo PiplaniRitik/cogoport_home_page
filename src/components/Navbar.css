@@ -1,8 +1,12 @@
+/* .Navbar-parent{
+  position:relative;
+} */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    
+    width:100%;
     top: 0;
     padding: 10px;
     transition: background-color 0.3s ease-in-out;
@@ -19,10 +23,15 @@
   }
   .yellow-bg {
     background-color: yellow;
+    position: sticky;
+    top:0;
   }
   
   .white-bg {
     background-color: white;
+    position:fixed;
+    top:0;
+    border-bottom:1px solid black;
   }
   
   .logo img {

@@ -43,10 +43,153 @@ with Reliable Shipping and Cashflows.
         </p>
         </div>
       <div className="right-item">
-      <div class="image"><img alt="productCheck" loading="lazy" width="280" height="360" decoding="async" data-nimg="1" className="styles_product_image__H5xch" srcset="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fmap-supply-chain.png&amp;w=384&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fmap-supply-chain.png&amp;w=640&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fmap-supply-chain.png&amp;w=640&amp;q=75"/></div>
+      <img  alt="productCheck" src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fmap-supply-chain.png&amp;w=640&amp;q=75"/>
       </div>
     </div>
+    <div class="container3">
+    <div style={{textAlign:'center'}}>Our Products</div>
+  <div class="row3">
+    <div class="text">End to End Cross Border <br/>Logistics</div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
   </div>
+  <div class="row3">
+    <div class="text">Domestic Logistics</div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  {/* <!-- Add more rows as needed --> */}
+  <div class="row3">
+    <div class="text">Supply Chain Solutions</div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  <div class="row3">
+    <div class="text">Financial Services</div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  <div class="row3">
+    <div class="text">Trade Management <br/>Solutions</div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  </div>
+  <div className="container4">
+      <div className="text4">Ready to take your Supply Chain to the Next Level?</div>
+      <button className="button4">Get Started</button>
+    </div>
+    <div className="container5">
+      <h2 className="heading">Centered Heading</h2>
+      <div className="button-container">
+        <button className="button5">Button 1</button>
+        <button className="button5">Button 2</button>
+      </div>
+      <div className="vertical-boxes">
+        <div className="vertical-box">
+          <div className="square-box"></div>
+          <div className="square-box"></div>
+        </div>
+        <div className="vertical-box">
+          
+        </div>
+        <div className="vertical-box">
+          <div className="square-box"></div>
+          <div className="square-box"></div>
+        </div>
+      </div>
+    </div>
+    <div className="container6">
+      <h2 className="heading">Centered Heading</h2>
+      <div className="image-container">
+        <div className="image-item">
+          <img src="image1.jpg" alt="Image 1" />
+          <p>Text 1</p>
+        </div>
+        <div className="image-item">
+          <img src="image2.jpg" alt="Image 2" />
+          <p>Text 2</p>
+        </div>
+        <div className="image-item">
+          <img src="image3.jpg" alt="Image 3" />
+          <p>Text 3</p>
+        </div>
+        <div className="image-item">
+          <img src="image4.jpg" alt="Image 4" />
+          <p>Text 4</p>
+        </div>
+        <div className="image-item">
+          <img src="image5.jpg" alt="Image 5" />
+          <p>Text 5</p>
+        </div>
+        <div className="image-item">
+          <img src="image6.jpg" alt="Image 6" />
+          <p>Text 6</p>
+        </div>
+        <div className="image-item">
+          <img src="image7.jpg" alt="Image 7" />
+          <p>Text 7</p>
+        </div>
+      </div>
+    </div>
+    <div className="flex-container">
+      <div className="left-item">
+        <p>
+      <h1>Grow Faster,  Go Global.</h1>
+      Strengthen your Supply Chain, and Scale your Business
+      <br/>
+with Reliable Shipping and Cashflows.
+        </p>
+            <button>Get Started</button>
+      </div>
+      <div className="right-item">
+      <img alt="productCheck" loading="lazy" width="280" height="360" decoding="async" data-nimg="1" className="styles_about_image__p8EBE" srcset="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=384&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75" />
+      </div>
+    </div>
+    <div className="container7">
+    <img class="styles_play_button__EeLAz" alt="Play Button" src="https://cdn.cogoport.io/cms-prod/cogo_public/vault/original/play-button-white.png"/>
+    </div>
+    <div className="flex-container">
+      <div className="left-item">
+        <p>
+      <h1>Grow Faster,  Go Global.</h1>
+      Strengthen your Supply Chain, and Scale your Business
+      <br/>
+with Reliable Shipping and Cashflows.
+        </p>
+      </div>
+      <div className="right-item">
+            <button>Get Started</button>
+      {/* <img alt="productCheck" loading="lazy" width="280" height="360" decoding="async" data-nimg="1" className="styles_about_image__p8EBE" srcset="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=384&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75" /> */}
+      </div>
+    </div>
+    <div className="container5">
+      <h2 className="heading">Centered Heading</h2>
+      <div className="vertical-boxes">
+        <div className="vertical-box">
+         
+        </div>
+        <div className="vertical-box">
+          
+        </div>
+        <div className="vertical-box">
+          
+        </div>
+      </div>
+    </div>
+</div>
+
+  
   );
 };
 

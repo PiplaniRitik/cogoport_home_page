@@ -7,7 +7,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset;
+      const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 0);
     };
 
@@ -27,7 +27,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${isScrolled ? 'white-bg' : 'yellow-bg'}`}>
+    
+    <div className="Navbar-parent">
+      <nav className={`navbar ${isScrolled ? 'white-bg' : 'yellow-bg'}`}>
+      {/* <nav className="navbar yellow-bg"> */}
       <div className="logo">
         <img src="path/to/logo.png" alt="Logo" />
       </div>
@@ -64,6 +67,7 @@ const Navbar = () => {
         <button className="signup-button">Signup</button>
       </div>
     </nav>
+    </div>
   );
 };
 

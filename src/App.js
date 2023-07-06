@@ -10,11 +10,11 @@ function App() {
 
         <div><Navbar/></div>
 
-        <div>
+        {/* <div> */}
           <div>
             <Inner/>
           </div>
-        </div>
+        {/* </div> */}
 
         <div></div>
 
