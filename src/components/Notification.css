@@ -3,17 +3,28 @@
     align-items: center;
     justify-content: space-between;
     /* background-color: red; */
-    color: white;
+    color: #fff;
     padding: 10px;
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     width:100%;
+    font-weight: bold;
   }
   /* .alt-alert{
     display:flex;
     color:yellow;
   } */
+  /* .logo{
+    flex:1;
+  } */
+  .alert-text{
+    display: flex;
+    /* flex:1; */
+    justify-content: row;
+    margin: 0 auto;
+  }
   .logo img {
+    
     height: 30px;
     width: 30px;
   }
@@ -22,11 +33,13 @@
     text-decoration: none;
   }
   .close-btn {
+    margin-right:60px;
+    /* flex:1; */
     cursor: pointer;
     color:yellow;
   }
   
   .alert.hidden {
-    background-color: yellow;
+    background-color: #fbdc00;
   }
   
