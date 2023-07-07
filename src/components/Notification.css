@@ -1,7 +1,7 @@
 .alert {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* background-color: red; */
     color: #fff;
     padding: 10px;
@@ -14,20 +14,22 @@
     display:flex;
     color:yellow;
   } */
-  /* .logo{
-    flex:1;
-  } */
+  .logo{
+    /* flex:1; */
+    display:flex;
+    flex-direction: row;
+  }
   .alert-text{
     display: flex;
     /* flex:1; */
     justify-content: row;
     margin: 0 auto;
   }
-  .logo img {
+  /* .logo img {
     
     height: 30px;
     width: 30px;
-  }
+  } */
   .book-link{
     color:yellow;
     text-decoration: none;

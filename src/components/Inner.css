@@ -7,15 +7,15 @@
 }
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     align-items: center;
     background: #fbdc00;
     width:100%;
-    margin-bottom:100px;
+    /* margin-bottom:100px; */
   }
   .flex-container2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom:100px;
     background: #fffef2;
@@ -29,6 +29,7 @@
     justify-content:center;
     align-items:center;
     /* background-color: yellow; */
+    /* height:100%; */
   }
   .form {
     margin-top: 20px;
@@ -73,9 +74,13 @@
     border-left: none;
   }
   .right-item {
-    flex: 1.0;
+    /* flex: 1.0; */
     display:flex;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height:100vh; */
     /* width:100%; */
     /* background-color: yellow; */
   }
@@ -134,7 +139,7 @@
 .container4 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   /* margin-left: auto;
   margin-right: auto; */
   padding: 16px;
@@ -166,6 +171,7 @@
   /* width:100%; */
   color:white;
   font-family: sans-serif;
+  cursor: pointer;
 }
 
 .container5 {
@@ -175,36 +181,56 @@
   height: 100vh;
   padding: 20px;
   box-sizing: border-box;
+  /* margin-bottom: 100px; */
 }
 
-.heading {
+.container5 .heading {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
+
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-bottom: 28px;
 }
 
 .button5 {
-  margin: 0 5px;
+  width:200px;
+  height:40px;
+  margin: 0 20px;
+  border-radius: 20px;
+  border:1px solid transparent;
 }
 
 .vertical-boxes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
   width: 100%;
+    
 }
 
 .vertical-box {
   display: flex;
+  flex:1;
   flex-direction: column;
   align-items: center;
-  width: 30%;
-  margin: 0 10px;
-  /* border:1px solid red; */
+  width: 100%;
+  margin: 0 20px;
+  /* margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px; */
+    /* overflow: hidden; */
+    text-align: start;
+    cursor: pointer;
+    /* box-sizing: border-box; */
+    border-radius: 8px;
+
+    box-shadow:2px 2px 4px rgba(201, 201, 201, 0.5);
+  /* border:1px solid grey; */
 }
 
 .square-box {
@@ -222,19 +248,23 @@
 
 .heading {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
+  font-size:28px;
+  font-family: Ubuntu sans-serif;
 }
 
 .image-container {
+  width:100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .image-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 10px;
 }
 
@@ -256,4 +286,95 @@ img {
 .video {
   flex: 1;
   max-width: 100%;
+}
+.subscribe-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  /* padding: 10px; */
+  border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.email-field {
+  flex: 1;
+  padding: 5px;
+  border:transparent;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width:250px;
+  height:30px;
+}
+
+.subscribe-button {
+  background-color: red;
+  color: #fff;
+  border: transparent;
+  height:40px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.flex-container8 {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  background-color: #fbdc00;
+  justify-content: space-evenly;
+  color: black;
+  width:100%;
+}
+
+/* .heading {
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: underline;
+} */
+
+.lists-container {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  margin: 20px 10px;
+  padding: 0;
+}
+
+.list-title {
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-align:start ;
+}
+
+.list-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: start;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+.container9{
+  background-color: #ebbe00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
 }
