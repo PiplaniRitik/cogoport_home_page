@@ -5,21 +5,21 @@ import Inner from './components/Inner';
 function App() {
   return (
     <div className="App">
-      <div>
-        <div><Alert/></div>
+      {/* <div> */}
+        {/* <div><Alert/></div>
 
-        <div><Navbar/></div>
+        <div><Navbar/></div> */}
 
         {/* <div> */}
-          <div>
+          {/* <div>
             <Inner/>
-          </div>
+          </div> */}
         {/* </div> */}
+        <Alert/>
+        <Navbar/>
+        <Inner/>
 
-        <div></div>
-
-        <div></div>
-      </div>
+      {/* </div> */}
       
     
     </div>
