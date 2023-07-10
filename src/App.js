@@ -4,22 +4,13 @@ import Navbar from './components/Navbar';
 import Inner from './components/Inner';
 function App() {
   return (
-    <div className="App">
-      {/* <div> */}
-        {/* <div><Alert/></div>
-
-        <div><Navbar/></div> */}
-
-        {/* <div> */}
-          {/* <div>
-            <Inner/>
-          </div> */}
-        {/* </div> */}
+    <div className="App" style={{position:"relative"}}>
+     
         <Alert/>
         <Navbar/>
         <Inner/>
 
-      {/* </div> */}
+      
       
     
     </div>
