@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Notification.css';
 
 const Alert = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [showAlert, setShowAlert] = useState(true);
   const [containerBackground, setContainerBackground] = useState('#ee3425');
 
@@ -9,16 +10,28 @@ const Alert = () => {
     setShowAlert(false);
     setContainerBackground('yellow');
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return showAlert ? (
-    <div className="alert" style={{ backgroundColor: containerBackground }}>
+    <div className={`alert ${isScrolled ? 'white-bg' : 'yellow-bg'}`} style={{ backgroundColor: containerBackground }}>
       <div className="alert-text">
-        
-          <img src={require("./cogoport_icon.webp")} alt="icon" style={{ width: "16px", height: "16px" }} />
-          
-            <strong>Limited Time Offer: Get 15% off on all Cogo Assured Rates. <a href="#" className="book-link">Book today</a></strong>
-          
-        
+
+        <img src={require("./images/cogoport_icon.webp")} alt="icon" />
+
+        <strong>Limited Time Offer: Get 15% off on all Cogo Assured Rates. <a href="#" className="book-link">Book today</a></strong>
+
+
       </div>
       <div className="close-btn" onClick={handleClose}>
         &#x2715;

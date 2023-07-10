@@ -11,20 +11,22 @@
   font-weight: bold;
   flex-wrap: wrap;
 }
-.alert-text{
+.alert-text {
   display: flex;
-    flex: 1 1;
-    align-self: center;
-    justify-content: center;
+  flex: 1 1;
+  align-self: center;
+  justify-content: center;
 }
 /* .logo {
   display: flex;
   align-items: center;
 } */
-
-img {
-  width: 16px;
-  height: 16px;
+.white-bg{
+  padding:0;
+}
+.alert-text img {
+  width: 12px;
+  height: 12px;
   align-self: center;
   margin-right: 4px;
 }

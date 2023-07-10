@@ -1,16 +1,16 @@
-/* .Navbar-parent{
+.Navbar-parent{
   position:relative;
-} */
+}
 .navbar {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
   flex-direction: row;
-  width: 100%;
+  max-width: 100%;
   top: 0;
   padding-bottom: 10px;
   padding-top: 10px;
-  font-family: "Ubuntu" sans-serif;
+  font-family: Ubuntu sans-serif;
   font-size: 14px;
   flex-wrap: wrap;
   font-weight: 500;
@@ -24,11 +24,14 @@
   display: block;
   flex-shrink: 0;
   margin-left: auto;
-  cursor:pointer;
+  cursor: pointer;
+}
+.logo svg {
+  align-self: center;
 }
 .dropdown {
   /* cursor: pointer; */
- 
+
   /* margin-left: 5%; */
   cursor: pointer;
   margin-right: 30px;
@@ -46,9 +49,13 @@
 
 .white-bg {
   background-color: white;
-  position: fixed;
-  top: 0;
-  border-bottom: 1px solid black;
+  position: sticky;
+  bottom:0;
+  /* border-bottom: 1px solid black; */
+  box-shadow: 0 1px 6px rgba(169, 188, 218, 0.65);
+  box-sizing: border-box;
+  /* box-shadow: 1px 1px 1px grey; */
+  width: 100%;
 }
 
 .logo img {
@@ -61,23 +68,31 @@
   align-items: center;
   /* gap: 10px; */
   justify-content: space-evenly;
-  margin:0 auto;
+  margin: 0 auto;
   flex-wrap: wrap;
   /* flex: 1.5; */
+  /* margin-left: 5px; */
 }
 
 .auth-buttons {
   display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-top: 8px;
+  margin-left: 6px;
   /* justify-content: center;
   align-items: center; */
   /* margin-right: 5%; */
 }
+.auth-buttons svg {
+  margin-right: 10px;
+  align-self: center;
+}
 
-.login-button{
-  margin-right:16px;
+.login-button {
+  margin-right: 16px;
+  cursor: pointer;
 }
 .signup-button {
   background-color: red;
@@ -88,7 +103,7 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
   cursor: pointer;
-  width:auto;
+  width: auto;
   /* margin:auto; */
   /* margin-right: 16px; */
   /* margin-left: 5%; */
@@ -97,23 +112,37 @@
 strong {
   font-family: "Ubuntu";
 }
-.dropdown-trigger{
-  display:flex;
+.dropdown-trigger {
+  display: flex;
   flex-direction: row;
 }
+.dropdown-trigger svg {
+  margin-left: 4px;
+  font-size: 10px;
+}
 .dropdown-trigger:hover {
-  
   color: red;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .navbar {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav-items {
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: 0;
+    margin-bottom: 10px;
+    align-self: center;
+    align-items: center;
+    margin-left:5px;
   }
-
+  .logo {
+    align-self: center;
+    margin: 0;
+  }
   .dropdown {
     margin-left: 0;
     margin-top: 10px;
@@ -121,5 +150,9 @@ strong {
 
   .dropdown-content {
     min-width: 100%;
+  }
+  .auth-buttons {
+    align-self: center;
+    margin: 0;
   }
 }

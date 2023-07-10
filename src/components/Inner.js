@@ -4,10 +4,10 @@ import "./Inner.css";
 const Inner = () => {
   return (
     <div className="Inner-Container">
-      <div className="flex-container">
+      <div className="flex-container container-a">
         <div className="left-item">
-          <p style={{ fontFamily: "PT Sans, Sans-serif", textAlign: "start" }}>
-            <h1 style={{ fontFamily: "Ubuntu, Sans-serif", fontSize: "40px" }}>
+          <p className="container-b">
+            <h1>
               Grow Faster, Go Global.
             </h1>
             Strengthen your Supply Chain, and Scale your Business
@@ -15,10 +15,7 @@ const Inner = () => {
             with Reliable Shipping and Cashflows.
             <br />
             <br />
-            {/* <div className="form"> */}
-            {/* <p
-              style={{ fontFamily: "PT Sans, Sans-serif", textAlign: "start",display:"flex" }}
-            > */}
+
             <strong style={{ fontSize: "12px" }}>Talk to us now:</strong>
           </p>
           <div className="form-inputs">
@@ -28,49 +25,49 @@ const Inner = () => {
               <option value="44">+44</option>
               {/* Add more country code options */}
             </select>
-            <input type="text" placeholder="Whatsapp Number" />
-            <button><strong>Get Started</strong></button>
+            <input className="container-d" type="text" placeholder="Whatsapp Number" />
+            <button className="container-e"><strong>Get Started</strong></button>
           </div>
         </div>
         {/* </div> */}
-        <div className="right-item">
+        <div className="right-item container-c">
           <video
-          
-            src="https://cdn.cogoport.io/cms-prod/cogo_public/vault/original/cogoverse_mobile_gif_2.webm" 
+
+            src="https://cdn.cogoport.io/cms-prod/cogo_public/vault/original/cogoverse_mobile_gif_2.webm"
             type="video/webm"
             controls
           />
         </div>
       </div>
       <div className="flex-container-horizontal">
-        <div className="flex-item">
-          
-          <h2 style={{ color: "#ee3425", fontSize: "40px"}}>180+ </h2>
-          <h4 style={{ fontSize: "16px" }}>Countries Served</h4>
+        {/* <span  style={{display:"flex", flexDirection:"row"}}> */}
+        <div className="flex-item container-f">
+
+          <h2 className="styling-numbers ">180+ </h2>
+          <h4 className="sizing" >Countries Served</h4>
         </div>
-        <div className="flex-item">
-          <h2 style={{ color: "#ee3425", fontSize: "40px" }}>10,000 </h2>
-          <h4 style={{ fontSize: "16px" }}>Ports Pairs Served</h4>
+        <div className="flex-item container-g">
+          <h2 className="styling-numbers " >10,000 </h2>
+          <h4 className="sizing" >Ports Pairs Served</h4>
         </div>
-        <div className="flex-item">
-          <h2 style={{ color: "#ee3425", fontSize: "40px" }}>30,000+ </h2>
-          <h4 style={{ fontSize: "16px" }}>Tons of Air Cargo Moved</h4>
+        {/* </span> */}
+        {/* <span style={{display:"flex", flexDirection:"row"}}> */}
+        <div className="flex-item container-h">
+          <h2 className="styling-numbers " >30,000+ </h2>
+          <h4 className="sizing" >Tons of Air Cargo Moved</h4>
         </div>
-        <div className="flex-item">
-          <h2 style={{ color: "#ee3425", fontSize: "40px" }}>7,00,000+</h2>
-          <h4 style={{ fontSize: "16px" }}>Containers Moved</h4>
+        <div className="flex-item container-i">
+          <h2 className="styling-numbers " >7,00,000+</h2>
+          <h4 className="sizing" >Containers Moved</h4>
         </div>
+        {/* </span> */}
       </div>
       <div className="flex-container2">
         <div className="left-item">
           <p
-            style={{
-              fontFamily: "PT Sans, Sans-serif",
-              fontSize: "14px",
-              textAlign: "start",
-            }}
+
           >
-            <h1 style={{ fontFamily: "'Ubuntu', sans-serif", fontSize: "40px" }}>
+            <h1 >
               One Stop Solution for Your <br />
               Supply Chain
             </h1>
@@ -81,28 +78,27 @@ const Inner = () => {
         <div className="right-item">
           {/* <img  alt="productCheck" src={("/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fmap-supply-chain.png&amp;w=640&amp;q=75")}/> */}
           <img
-            src={require("./Screenshot (76).png")}
+            src={require("./images/Screenshot (76).png")}
+
             style={{ height: "293px", width: "100%" }}
           />
         </div>
       </div>
       <div className="container3">
         <div
-          style={{
-            textAlign: "center",
 
-            fontFamily: "'Ubuntu',sans-serif",
-          }}
         >
-          <h3 style={{ fontSize: "28px" }}>Our Products</h3>
+          <h3 className="h3-sizing" >Our Products</h3>
         </div>
         <div className="row3">
-          <div className="text" style={{ fontSize: "24px", marginRight: "80px", fontFamily: "'Ubuntu', sans-serif" }}>
+          <div className="text" >
             <h4>
               End to End Cross Border <br />
               Logistics
             </h4>
           </div>
+          <div className="abc">
+          
           <div className="square">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -213,9 +209,9 @@ const Inner = () => {
                 d="M13.044 10.88H2.09V9.582h.075c.297 0 .604-.297.901-.585.31-.3.603-.583.913-.583.351 0 .678.316.994.622.277.27.564.547.82.547.28 0 .578-.29.867-.57.304-.294.619-.6.947-.6.327 0 .642.305.946.6.289.28.588.57.867.57.256 0 .543-.278.82-.547.316-.306.643-.622.994-.622.311 0 .604.283.913.583.274.265.557.54.832.58l.064.01.001 1.293Zm-10.803-.151h10.652V9.714c-.298-.074-.579-.346-.85-.609-.275-.266-.559-.54-.808-.54-.291 0-.595.294-.89.58-.312.302-.608.588-.924.588-.341 0-.662-.31-.973-.612-.282-.274-.574-.556-.841-.556s-.559.283-.841.556c-.311.301-.632.612-.973.612-.317 0-.612-.286-.924-.589-.295-.285-.599-.58-.889-.58-.25 0-.534.275-.809.541-.296.287-.601.583-.93.623v1Z"
               ></path>{" "}
             </svg>
-            <h4 style={{ fontFamily: "sans-serif" }}>Ocean:FCL</h4>
+            <h4 >Ocean:FCL</h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -224,7 +220,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -395,7 +391,7 @@ const Inner = () => {
             </svg>
             <h4>Ocean:LCL</h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -404,7 +400,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -497,7 +493,7 @@ const Inner = () => {
             </svg>
             <h4>International Air</h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -506,7 +502,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -517,7 +513,7 @@ const Inner = () => {
               </span>
             </strong>
           </div>
-          <div className="square">
+          <div className="square last-square" >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -677,7 +673,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -686,7 +682,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -698,10 +694,12 @@ const Inner = () => {
             </strong>
           </div>
         </div>
+        </div>
         <div className="row3">
-          <div className="text" style={{ fontSize: "24px", marginRight: "130px" }}>
+          <div className="text" style={{ fontSize: "24px" }}>
             <h4>Domestic Logistics</h4>
           </div>
+          <div className="abc">
           <div className="square">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -773,7 +771,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -782,7 +780,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -828,7 +826,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -837,7 +835,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -848,14 +846,16 @@ const Inner = () => {
               </span>
             </strong>
           </div>
-          <div className="square" style={{ border: "none", background: "#fffef2", boxShadow: "none" }}></div>
-          <div className="square" style={{ border: "none", background: "#fffef2", boxShadow: "none" }}></div>
+          <div className="square empty-square" ></div>
+          <div className="square empty-square last-square"  ></div>
+        </div>
         </div>
         {/* <!-- Add more rows as needed --> */}
         <div className="row3">
-          <div className="text" style={{ fontSize: "24px", marginRight: "80px" }}>
+          <div className="text" style={{ fontSize: "24px" }}>
             <h4>Supply Chain Solutions</h4>
           </div>
+          <div className="abc">
           <div className="square">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -911,7 +911,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -920,7 +920,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -1026,7 +1026,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1035,7 +1035,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -1211,7 +1211,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1220,7 +1220,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -1231,7 +1231,7 @@ const Inner = () => {
               </span>
             </strong>
           </div>
-          <div className="square">
+          <div className="square last-square" >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -1293,7 +1293,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1302,7 +1302,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -1314,10 +1314,12 @@ const Inner = () => {
             </strong>
           </div>
         </div>
+        </div>
         <div className="row3">
-          <div className="text" style={{ fontSize: "24px", marginRight: "125px" }}>
+          <div className="text" style={{ fontSize: "24px" }}>
             <h4>Financial Services</h4>
           </div>
+          <div className="abc">
           <div className="square">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1376,7 +1378,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1385,7 +1387,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -1572,7 +1574,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1581,7 +1583,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -1592,16 +1594,18 @@ const Inner = () => {
               </span>
             </strong>
           </div>
-          <div className="square" style={{ border: "none", background: "#fffef2", boxShadow: "none" }}></div>
-          <div className="square" style={{ border: "none", background: "#fffef2", boxShadow: "none" }}></div>
+          <div className="square empty-square" ></div>
+          <div className="square square empty-square last-square"  ></div>
+        </div>
         </div>
         <div className="row3">
-          <div className="text" style={{ fontSize: "24px", marginRight: "100px" }}>
+          <div className="text" style={{ fontSize: "24px" }}>
             <h4>
               Trade Management <br />
               Solutions
             </h4>
           </div>
+          <div className="abc">
           <div className="square">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1642,7 +1646,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1651,7 +1655,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -1697,7 +1701,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1706,7 +1710,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -1937,7 +1941,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1946,7 +1950,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -1957,7 +1961,7 @@ const Inner = () => {
               </span>
             </strong>
           </div>
-          <div className="square">
+          <div className="square last-square" >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -2102,7 +2106,7 @@ const Inner = () => {
               Handling
             </h4>
             <strong>
-              <span style={{ color: "#ee3425", fontSize: "14px" }}>
+              <span className="red-sizing">
                 Find Out More{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -2111,7 +2115,7 @@ const Inner = () => {
                   width="1em"
                   height="1em"
                   role="img"
-                  style={{ marginRight: "5px" }}
+                  className="svg-margin"
                 >
                   <path
                     className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -2124,12 +2128,45 @@ const Inner = () => {
           </div>
         </div>
       </div>
+      </div>
+      <div className="container-anime">
+        <h3>Trusted By</h3>
+        <div className="child_container-anime">
+          <div className="animations">
+            <div className="final_anima" >
+              <img src={require("./images/utltratech_logo.webp")} alt="" height="73" width="146" />
+            </div>
+            <div className="final_anima" >
+              <img src={require("./images/utltratech_logo.webp")} alt="" height="73" width="146" />
+            </div>
+            <div className="final_anima" >
+              <img src={require("./images/utltratech_logo.webp")} alt="" height="73" width="146" />
+            </div>
+            <div className="final_anima" >
+              <img src={require("./images/utltratech_logo.webp")} alt="" height="73" width="146" />
+            </div>
+            <div className="final_anima" >
+              <img src={require("./images/utltratech_logo.webp")} alt="" height="73" width="146" />
+            </div>
+            <div className="final_anima" >
+              <img src={require("./images/utltratech_logo.webp")} alt="" height="73" width="146" />
+            </div>
+            <div className="final_anima" >
+              <img src={require("./images/utltratech_logo.webp")} alt="" height="73" width="146" />
+            </div>
+            <div className="final_anima" >
+              <img src={require("./images/utltratech_logo.webp")} alt="" height="73" width="146" />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="container4">
         <div className="text4">
-          <h3 style={{ fontSize: "28px" }}>Ready to take your Supply Chain to the Next Level?</h3>
+          <h3 >Ready to take your Supply Chain to the Next Level?</h3>
         </div>
-        <button className="button4">
-          <strong style={{ fontSize: "14px" }}>Get Started</strong>
+        <button className="button4" style={{marginRight:"0px"}}>
+          <strong >Get Started</strong>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -2150,36 +2187,17 @@ const Inner = () => {
       <div className="container5">
         <h3
           className="heading"
-          style={{ fontSize: "28px", fontFamily: "'Ubuntu', sans-serif" }}
+
         >
           How it Works
         </h3>
-        {/* <div className="button-container">
-        <button className="button5" style={{background:"#fbdc00",fontSize:"14px",fontFamily:"PT SANS sans-serif"}}><strong>For Cargo Owners</strong></button>
-        <button className="button5" style={{background:"#e5dfdf"}}><strong>For Logistic Partners</strong></button>
-      </div>
-      <div className="vertical-boxes">
-        <div className="vertical-box">
-          <div className="square-box">
-            <p></p>
-          </div>
-          <div className="square-box"></div>
-        </div>
-        <div className="vertical-box">
-        <img alt="line for stages" loading="lazy" width="150" height="59" decoding="async" data-nimg="1" className="styles_arrowimage__50gz2" srcset="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Flinearrow1.png&amp;w=256&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Flinearrow1.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Flinearrow1.png&amp;w=384&amp;q=75" ></img>
-        </div>
-        <div className="vertical-box">
-          <div className="square-box"></div>
-          <div className="square-box"></div>
-        </div>
-      </div> */}
         <img
-          src={require("./Screenshot (75).png")}
+          src={require("./images/Screenshot (75).png")}
           style={{ height: "auto", width: "100%" }}
         />
       </div>
       <div className="container6">
-        <h2 className="heading" style={{ fontFamily: "Ubuntu, sans-serif", fontSize: "28px" }}>Industries Served</h2>
+        <h2 className="heading" >Industries Served</h2>
         <div className="image-container">
           <div className="image-item">
             <svg
@@ -2548,35 +2566,34 @@ const Inner = () => {
           </div>
         </div>
       </div>
-      <div className="flex-container" style={{ background: "#fffef2" }}>
+      <div className="flex-container container-j" style={{ background: "#fffef2" }}>
         <div className="left-item">
-          <p style={{ fontSize: "16px", fontFamily: "'PT SANS', sans-serif" }}>
-            <h1 style={{ fontSize: "40px", fontFamily: "'Ubuntu', sans-serif" }}>Get Started Today</h1>
+          <p >
+            <h1 >Get Started Today</h1>
             Plan, Book and Finance your shipment in one place.
             <br />
             Experience how Cogoport’s Global Trade Platform can Turbocharge your
             Business.
           </p>
           <button
-            className="button4"
+            className="button4 buttonx"
             style={{ height: "50px", alignItems: "center" }}
           >
             <strong>Get Started</strong>
-            {/* <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" style={{marginLeft: "5px", marginTop: "2px"}}><path className="ic-m-arrow_rotate_right_svg__ic_m_arrow_rotate_right" d="M4.375 1.724a.64.64 0 0 0-.12.045.639.639 0 0 0-.239.319c-.019.073-.026 1.483-.026 4.918 0 4.214.004 4.83.035 4.933a.532.532 0 0 0 .476.358c.199 0 .109.084 2.716-2.518 1.492-1.488 2.489-2.501 2.519-2.557a.533.533 0 0 0 .008-.432c-.054-.106-4.9-4.96-5.008-5.016a.612.612 0 0 0-.361-.05" fill-rule="evenodd"></path></svg> */}
           </button>
         </div>
         <div className="right-item">
-          {/* <img alt="productCheck" loading="lazy" width="280" height="360" decoding="async" data-nimg="1" className="styles_about_image__p8EBE" srcset="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=384&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75" /> */}
           <img
-            src={require("./trade-tech-home-1.webp")}
-            style={{ height: "400px", width: "380px" }}
+            src={require("./images/trade-tech-home-1.webp")}
+            height="400"
+            width="380"
+            style={{width:"300px"}}
           />
         </div>
       </div>
       <div className="container7">
-        {/* <img className="styles_play_button__EeLAz" alt="Play Button" src="https://cdn.cogoport.io/cms-prod/cogo_public/vault/original/play-button-white.png"/> */}
         <img
-          src={require("./Screenshot (78).png")}
+          src={require("./images/Screenshot (78).png")}
           style={{ height: "auto", width: "100%", cursor: "pointer" }}
         />
       </div>
@@ -2584,12 +2601,13 @@ const Inner = () => {
         className="flex-container"
         style={{ background: "#ee3425", justifyContent: "space-evenly" }}
       >
-        <div className="left-item">
+        <div className="left-item container-k">
           <p
             style={{
               color: "white",
               fontSize: "16px",
               fontFamily: "'PT Sans', sans-serif",
+              
             }}
           >
             <h1
@@ -2604,10 +2622,10 @@ const Inner = () => {
             Know more about Cogoport’s Global Trade Platform<sup>TM</sup>
           </p>
         </div>
-        <div className="right-item">
+        <div className="right-item container-l" >
           <button
             className="button4"
-            style={{ background: "#fbdc00", color: "black" }}
+            style={{ background: "#fbdc00", color: "black",marginRight:"0px" }}
           >
             <strong>Know More</strong>
             <svg
@@ -2629,22 +2647,17 @@ const Inner = () => {
           {/* <img alt="productCheck" loading="lazy" width="280" height="360" decoding="async" data-nimg="1" className="styles_about_image__p8EBE" srcset="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=384&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75" /> */}
         </div>
       </div>
-      <div className="container5" style={{display:"flex",flexWrap:"wrap"}}>
+      <div className="container5" >
         <h2
           className="heading"
-          style={{
-            color: "black",
-            fontSize: "28px",
-            fontFamily: "'Ubuntu' ,sans-serif",
-          }}
         >
           Blogs
         </h2>
         <div className="vertical-boxes">
           <div className="vertical-box">
             <img
-              src={require("./Envirotainer_Banner.webp")}
-              style={{ width: "376px", height: "200px" }}
+              src={require("./images/Envirotainer_Banner.webp")}
+              style={{ width: "100%", height: "200px" }}
             />
             <div
               style={{
@@ -2657,18 +2670,18 @@ const Inner = () => {
               }}
             >
               <h4 style={{ color: "#ee3425", fontSize: "16px", fontFamily: "'Ubuntu', sans-serif" }}>Trade News</h4>
-              <h4 style={{ fontSize: "16px", fontFamily: "'Ubuntu', sans-serif" }}>
+              <h4 className="sizing">
                 Cogoport Enables Movement of 11 Envirotainer Containers from
                 India to Italy
               </h4>
-              <p style={{ fontSize: "16px", fontFamily: "'PT Sans', sans-serif" }}>
+              <p >
                 Cogoport’s collective logistics and technical expertise came in
                 handy as our operations and technical teams went the extra mile
                 and designed bespoke solutions on the go.
               </p>
               <div>
                 <span style={{ color: "#ee3425" }}>
-                  <strong style={{ fontSize: "14px", fontFamily: "'PT Sans', sans-serif" }}>Read More</strong>
+                  <strong className="read-more-style">Read More</strong>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -2676,7 +2689,7 @@ const Inner = () => {
                     width="20"
                     height="20"
                     role="img"
-                    style={{ marginLeft: "5px" }}
+                    className="svg-margin"
                   >
                     <path
                       className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -2691,8 +2704,8 @@ const Inner = () => {
           </div>
           <div className="vertical-box">
             <img
-              src={require("./Cogoport_Positioning_Banner.webp")}
-              style={{ width: "376px", height: "200px" }}
+              src={require("./images/Cogoport_Positioning_Banner.webp")}
+              style={{ width: "100%", height: "200px" }}
             />
             <div
               style={{
@@ -2704,7 +2717,7 @@ const Inner = () => {
               }}
             >
               <h4 style={{ color: "#ee3425", fontSize: "16px", fontFamily: "'Ubuntu', sans-serif" }}>Trade News</h4>
-              <h4 style={{ fontSize: "16px", fontFamily: "'Ubuntu', sans-serif" }}>
+              <h4 className="sizing">
                 Cogoport Enables Movement of 11 Envirotainer Containers from
                 India to Italy
               </h4>
@@ -2715,7 +2728,7 @@ const Inner = () => {
               </p>
               <div>
                 <span style={{ color: "#ee3425" }}>
-                  <strong style={{ fontSize: "14px", fontFamily: "'PT Sans', sans-serif" }}>Read More</strong>
+                  <strong className="read-more-style">Read More</strong>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -2723,7 +2736,7 @@ const Inner = () => {
                     width="20"
                     height="20"
                     role="img"
-                    style={{ marginLeft: "5px" }}
+                    className="svg-margin"
                   >
                     <path
                       className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -2738,8 +2751,8 @@ const Inner = () => {
           </div>
           <div className="vertical-box">
             <img
-              src={require("./Eng_2405_Banner.webp")}
-              style={{ width: "376px", height: "200px" }}
+              src={require("./images/Eng_2405_Banner.webp")}
+              style={{ width: "100%", height: "200px" }}
             />
             <div
               style={{
@@ -2750,7 +2763,7 @@ const Inner = () => {
                 marginLeft: "10px",
               }}
             >
-              <h4 style={{ color: "#ee3425" }}>Trade News</h4>
+              {/* <h4 style={{ color: "#ee3425" }}>Trade News</h4> */}
               <h4 style={{ color: "#ee3425", fontSize: "16px", fontFamily: "'Ubuntu', sans-serif" }}>Trade News</h4>
               <h4 style={{ fontSize: "16px", fontFamily: "'Ubuntu', sans-serif" }}>
                 Cogoport Enables Movement of 11 Envirotainer Containers from
@@ -2763,7 +2776,7 @@ const Inner = () => {
               </p>
               <div>
                 <span style={{ color: "#ee3425" }}>
-                  <strong style={{ fontSize: "14px", fontFamily: "'PT Sans', sans-serif" }}>Read More</strong>
+                  <strong className="read-more-style">Read More</strong>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -2771,7 +2784,7 @@ const Inner = () => {
                     width="20"
                     height="20"
                     role="img"
-                    style={{ marginLeft: "5px" }}
+                    className="svg-margin"
                   >
                     <path
                       className="ic-m-arrow_next_svg__ic_m_arrow_next"
@@ -2788,24 +2801,24 @@ const Inner = () => {
         <div style={{ marginTop: "20px", marginBottom: "20px" }}>
           <button
             className="button4"
-            style={{ height: "50px", alignItems: "center" }}
+            style={{ height: "50px", alignItems: "center",marginRight:"0px" }}
           >
-            <strong style={{ fontSize: "14px", fontFamily: "'PT Sans', sans-serif" }}>View All</strong>
+            <strong className="read-more-style" >View All</strong>
             {/* <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" style={{marginLeft: "5px", marginTop: "2px"}}><path className="ic-m-arrow_rotate_right_svg__ic_m_arrow_rotate_right" d="M4.375 1.724a.64.64 0 0 0-.12.045.639.639 0 0 0-.239.319c-.019.073-.026 1.483-.026 4.918 0 4.214.004 4.83.035 4.933a.532.532 0 0 0 .476.358c.199 0 .109.084 2.716-2.518 1.492-1.488 2.489-2.501 2.519-2.557a.533.533 0 0 0 .008-.432c-.054-.106-4.9-4.96-5.008-5.016a.612.612 0 0 0-.361-.05" fill-rule="evenodd"></path></svg> */}
           </button>
         </div>
       </div>
       <div className="flex-container" style={{ background: "#fbdc00", justifyContent: "center" }}>
-        <div className="left-item">
-          {/* <img src={require("./trade-tech-home-1.webp")}  style={{height:"400px", width:"380px"}}/> */}
+        <div className="left-item container-l">
+          {/* <img src={require("./images/trade-tech-home-1.webp")}  style={{height:"400px", width:"380px"}}/> */}
           <img
-            src={require("./cogoport-subscribe.webp")}
+            src={require("./images/cogoport-subscribe.webp")}
             style={{ height: "170px", width: "206px", cursor: "pointer" }}
           />
         </div>
-        <div className="right-item" >
+        <div className="right-item container-l" >
           {/* <img alt="productCheck" loading="lazy" width="280" height="360" decoding="async" data-nimg="1" className="styles_about_image__p8EBE" srcset="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=384&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75" /> */}
-          <p style={{ fontFamily: "'PT Sans',sans-serif", fontSize: "16px" }}
+          <p
           >
             <h1 style={{ fontFamily: "'ubuntu',sans-serif", fontSize: "28px" }}>Subscribe to our newsletter now!</h1>
             Don’t miss out on the latest happenings at Cogoport.
@@ -2824,7 +2837,7 @@ const Inner = () => {
       </div>
 
       <div className="flex-container8">
-        {/* <h2 className="heading8">Flex Container</h2> */}
+
         <div className="lists-container">
           <div className="list">
             <h3 className="list-title">Products</h3>
@@ -3128,7 +3141,7 @@ const Inner = () => {
           </div>
         </div>
       </div>
-      <div className="flex-container8" style={{ background: "#ebbe00" }}>
+      <div className="flex-container8 footer" style={{ background: "#ebbe00" }}>
         <div className="lists-container">
           <div className="list">
             {/* <h3 className="list-title">List 1</h3> */}
@@ -3224,17 +3237,18 @@ const Inner = () => {
         </div>
       </div>
       <div className="container9">
-        <div style={{ fontFamily: "'Ubuntu'", fontSize: "12px" }}>
+        <div className="xyz" style={{ fontFamily: "'Ubuntu'", fontSize: "12px",display:"flex",alignItems:"center",marginBottom:"5px" }}>
           <span style={{ marginRight: "30px", margin: "20px" }}>
             <strong>© 2023 Cogo Universe PTE. All rights reserved.</strong>
           </span>
           <strong><a href="#" style={{ textDecoration: "none" }}>Terms and Conditions | Cookie policy | Privacy and Data Protection Policy</a></strong>
         </div>
-        <div>
-          <img src={require("./globe.webp")}
-            style={{ height: "20px", width: "20px", cursor: "pointer" }} />
-          <span style={{ marginRight: "20px", fontFamily: "'PT Sans'", fontSize: "15px" }}> English (IN)  </span>
-          <span><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="16" height="16" role="img"><path className="ic-m-linkedin_logo_svg__ic_m_linkedin_logo" d="M2.158 1.038c-.506.112-.92.494-1.089 1.004a1.672 1.672 0 0 0-.002.863c.147.466.501.818.986.983.098.033.198.043.42.043.353.001.544-.052.802-.221a1.45 1.45 0 0 0 .668-1.23c0-.262-.032-.401-.155-.657a1.467 1.467 0 0 0-1.63-.785m7.455 3.755c-.75.134-1.418.542-1.818 1.113l-.118.168V4.993l-1.184.006-1.185.006-.006 3.996-.005 3.996h2.38v-2.234c0-2.379.003-2.467.114-2.789.164-.475.491-.796.937-.917.07-.019.232-.041.36-.048.711-.041 1.167.306 1.369 1.041l.054.198.007 2.375.007 2.374h2.472l-.001-2.608c0-1.617-.009-2.713-.024-2.885-.13-1.476-.878-2.402-2.163-2.675-.294-.062-.94-.082-1.196-.036M1.237 8.995v4.002H3.71V4.993H1.237v4.002" fill-rule="evenodd"></path></svg>
+        <div  className="xyz" style={{display:"flex", alignItems:"center"}}>
+          <img src={require("./images/globe.webp")}
+            style={{ height: "20px", width: "20px", cursor: "pointer",marginBottom:"5px" }} />
+          <span style={{ marginLeft:"10px",marginRight: "20px", fontFamily: "'PT Sans'", fontSize: "15px",marginBottom:"5px" }}> English (IN)  </span>
+          <span style={{cursor:"pointer"}}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="16" height="16" role="img"><path className="ic-m-linkedin_logo_svg__ic_m_linkedin_logo" d="M2.158 1.038c-.506.112-.92.494-1.089 1.004a1.672 1.672 0 0 0-.002.863c.147.466.501.818.986.983.098.033.198.043.42.043.353.001.544-.052.802-.221a1.45 1.45 0 0 0 .668-1.23c0-.262-.032-.401-.155-.657a1.467 1.467 0 0 0-1.63-.785m7.455 3.755c-.75.134-1.418.542-1.818 1.113l-.118.168V4.993l-1.184.006-1.185.006-.006 3.996-.005 3.996h2.38v-2.234c0-2.379.003-2.467.114-2.789.164-.475.491-.796.937-.917.07-.019.232-.041.36-.048.711-.041 1.167.306 1.369 1.041l.054.198.007 2.375.007 2.374h2.472l-.001-2.608c0-1.617-.009-2.713-.024-2.885-.13-1.476-.878-2.402-2.163-2.675-.294-.062-.94-.082-1.196-.036M1.237 8.995v4.002H3.71V4.993H1.237v4.002" fill-rule="evenodd"></path></svg>
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="16" height="16" role="img"><path className="ic-m-facebook_logo_svg__ic_m_facebook_logo" d="M7.303 1.03c-.914.095-1.571.513-1.851 1.177-.166.396-.202.72-.202 1.84v.876H3.99v2.054h1.26v6.02h2.427V6.953h1.678l.012-.075c.007-.042.044-.454.083-.916.039-.462.078-.885.085-.94l.014-.099H7.674l.007-.74c.007-.724.009-.744.062-.853a.337.337 0 0 1 .152-.163c.093-.05.123-.052.873-.06l.775-.007V1.003l-1.02.003c-.562.002-1.111.013-1.22.024" fill-rule="evenodd"></path></svg>
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="16" height="16" role="img"><path className="ic-m-instagram_logo_svg__ic_m_instagram_logo" d="M4.62 1.019c-.701.029-1.393.178-1.82.392-1.061.531-1.653 1.504-1.774 2.917-.018.208-.023 1.107-.017 2.859.01 2.757.004 2.626.137 3.236.098.452.241.787.495 1.159.46.672 1.164 1.109 2.09 1.297.508.103.551.105 3.234.105 2.744.001 2.716.002 3.371-.118 1.471-.269 2.483-1.459 2.615-3.078.012-.141.028-1.291.037-2.555.016-2.417.009-2.688-.086-3.336-.059-.402-.099-.563-.212-.855-.369-.955-1.2-1.647-2.272-1.894-.575-.133-.498-.13-3.161-.133-1.354-.002-2.541 0-2.637.004M9.17 2.1c1.069.057 1.516.187 1.966.568.27.23.547.668.635 1.007.046.175.097.611.128 1.096.03.453.03 2.896.001 4.084-.025 1.039-.067 1.339-.248 1.769a2.029 2.029 0 0 1-1.385 1.156c-.483.117-.615.126-1.949.136-1.703.013-4.024-.026-4.258-.071-.671-.13-1.011-.297-1.359-.665-.367-.389-.528-.845-.6-1.695-.032-.376-.032-4.626 0-4.982.031-.343.104-.759.165-.942a2.13 2.13 0 0 1 .645-.938c.178-.147.552-.339.771-.394.178-.045.684-.1 1.171-.126.507-.027 3.823-.03 4.317-.003m.79 1.014a.737.737 0 0 0-.443.457.949.949 0 0 0 .048.54.776.776 0 0 0 .328.326c.088.045.141.055.315.055.19 0 .223-.007.335-.07a.721.721 0 0 0-.083-1.305.975.975 0 0 0-.5-.003m-3.494.844c-.243.04-.619.164-.846.279-.742.374-1.284 1-1.549 1.791a2.805 2.805 0 0 0-.151.958c0 .686.188 1.276.578 1.817a3.083 3.083 0 0 0 3.377 1.148 3.155 3.155 0 0 0 1.589-1.106c.184-.245.408-.688.488-.97a3.087 3.087 0 0 0-2.448-3.919 4.053 4.053 0 0 0-1.038.002m.888 1.069a2.005 2.005 0 0 1 1.597 1.546c.059.255.053.657-.013.905a1.997 1.997 0 0 1-.595.987c-.162.153-.25.215-.44.308-.346.171-.543.218-.915.217a1.727 1.727 0 0 1-.886-.205c-.4-.2-.705-.508-.9-.91a1.678 1.678 0 0 1-.201-.782 1.856 1.856 0 0 1 .135-.839 2.04 2.04 0 0 1 1.533-1.237c.181-.03.503-.026.685.01" fill-rule="evenodd"></path></svg>
           </span>
