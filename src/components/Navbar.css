@@ -29,6 +29,15 @@
 .logo svg {
   align-self: center;
 }
+.logo1{
+  display: block;
+  flex-shrink: 0;
+  margin-left: auto;
+  cursor: pointer;
+}
+.logo1 svg{
+  align-self: center;
+}
 .dropdown {
   /* cursor: pointer; */
 
@@ -61,6 +70,11 @@
 .logo img {
   height: 30px;
   width: 30px;
+}
+.logo1 img{
+    height: 30px;
+    width: 30px;
+  
 }
 
 .nav-items {
@@ -123,10 +137,44 @@ strong {
 .dropdown-trigger:hover {
   color: red;
 }
-@media screen and (max-width: 1024px) {
+.hamb{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.resp-nav{
+  
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .resp-nav{
+    display:flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  /* margin-left:60px; */
+  }
+  .logo{
+    display:none;
+  }
+  .nav-items{
+    display:none;
+  }
+  .auth-buttons{
+    margin-right: 60px;
+    display:none;
+  }
+  .navbar{
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width:769px) {
   .navbar {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
   }

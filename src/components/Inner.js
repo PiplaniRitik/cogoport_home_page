@@ -4,7 +4,12 @@ import "./Inner.css";
 const Inner = () => {
   return (
     <div className="Inner-Container">
-      <div className="flex-container container-a">
+      <div className="flex-container container-a"
+       style={{
+        backgroundImage: "url(https://cdn.cogoport.io/cms-prod/cogo_public/vault/original/home-banner-background-1.webp)",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover"}}
+  >
         <div className="left-item">
           <p className="container-b">
             <h1>
@@ -2165,7 +2170,7 @@ const Inner = () => {
         <div className="text4">
           <h3 >Ready to take your Supply Chain to the Next Level?</h3>
         </div>
-        <button className="button4" style={{ marginRight: "0px" }}>
+        <button className="button4 bitbut" style={{ marginRight: "0px" }}>
           <strong >Get Started</strong>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -2184,7 +2189,7 @@ const Inner = () => {
           </svg>
         </button>
       </div>
-      <div className="container5">
+      {/* <div className="container5">
         <h3
           className="heading"
 
@@ -2195,7 +2200,280 @@ const Inner = () => {
           src={require("./images/Screenshot (75).png")}
           style={{ height: "auto", width: "100%" }}
         />
+      </div> */}
+
+<div className="flex-container-a">
+      <h3 style={{ fontSize: '28px', fontFamily: 'Ubuntu, sans-serif' }}>
+        HOW IT WORKS
+      </h3>
+
+      <div className="but">
+        <button className="but1">For cargo owners</button>
+        <button className="but2">For logistics Partners</button>
       </div>
+
+      <div className="flex-container-b">
+        <div className="container-ee">
+          <img style={{ width: '280px', height: 'auto' }} src={require("./images/homepagem1.webp")} alt="" />
+        </div>
+        <div style={{ flexBasis: '340px' }}>
+          <div className="container-cc">
+            <h4 className="headed">Stage 1:</h4>
+
+            <span style={{ fontSize: '20px', display: 'flex', alignItems: 'center', fontWeight: 'bold' }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+                width="40"
+                height="40"
+                role="img"
+              >
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M12.613 7h-1.576"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#FBDC00"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M7 12.85a5.85 5.85 0 1 0 0-11.7 5.85 5.85 0 0 0 0 11.7Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#fff"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M9.383 4.371 5.72 5.652a.11.11 0 0 0-.068.068L4.37 9.383a.21.21 0 0 0 .246.246L8.28 8.348a.109.109 0 0 0 .068-.068l1.28-3.663a.21.21 0 0 0-.245-.246Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#221F1F"
+                  d="M7 7.762a.762.762 0 1 0 0-1.524.762.762 0 0 0 0 1.524Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M7 1.387v1.576m0 9.65v-1.576M1.387 7h1.576"
+                />
+              </svg>
+              Discover
+            </span>
+
+            <p>• Spot and Contract Rates for Logistics</p>
+
+            <p>• Service details, Trade Compliance/ Regulatory Requirements</p>
+
+            <p>• Knowledge and Insights on Trade, Logistics, Finance, Supply Chains</p>
+          </div>
+
+          <div className="container-cc">
+            <h4 className="headed">Stage 1:</h4>
+
+            <span style={{ fontSize: '20px', display: 'flex', alignItems: 'center', fontWeight: 'bold' }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+                width="40"
+                height="40"
+                role="img"
+              >
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M12.613 7h-1.576"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#FBDC00"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M7 12.85a5.85 5.85 0 1 0 0-11.7 5.85 5.85 0 0 0 0 11.7Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#fff"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M9.383 4.371 5.72 5.652a.11.11 0 0 0-.068.068L4.37 9.383a.21.21 0 0 0 .246.246L8.28 8.348a.109.109 0 0 0 .068-.068l1.28-3.663a.21.21 0 0 0-.245-.246Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#221F1F"
+                  d="M7 7.762a.762.762 0 1 0 0-1.524.762.762 0 0 0 0 1.524Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M7 1.387v1.576m0 9.65v-1.576M1.387 7h1.576"
+                />
+              </svg>
+              Discover
+            </span>
+
+            <p>• Spot and Contract Rates for Logistics</p>
+
+            <p>• Service details, Trade Compliance/ Regulatory Requirements</p>
+
+            <p>• Knowledge and Insights on Trade, Logistics, Finance, Supply Chains</p>
+          </div>
+        </div>
+
+        <div className="container-dd">
+          <img className="img1" style={{ height: '520px', marginBottom: '180px' }} src={require("./images/Screenshot (79).png")} alt="" />
+        </div>
+
+        <div style={{ flexBasis: '340px' }}>
+          <div className="container-cc">
+            <h4 className="headed">Stage 1:</h4>
+
+            <span style={{ fontSize: '20px', display: 'flex', alignItems: 'center', fontWeight: 'bold' }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+                width="40"
+                height="40"
+                role="img"
+              >
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M12.613 7h-1.576"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#FBDC00"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M7 12.85a5.85 5.85 0 1 0 0-11.7 5.85 5.85 0 0 0 0 11.7Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#fff"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M9.383 4.371 5.72 5.652a.11.11 0 0 0-.068.068L4.37 9.383a.21.21 0 0 0 .246.246L8.28 8.348a.109.109 0 0 0 .068-.068l1.28-3.663a.21.21 0 0 0-.245-.246Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#221F1F"
+                  d="M7 7.762a.762.762 0 1 0 0-1.524.762.762 0 0 0 0 1.524Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M7 1.387v1.576m0 9.65v-1.576M1.387 7h1.576"
+                />
+              </svg>
+              Discover
+            </span>
+
+            <p>• Spot and Contract Rates for Logistics</p>
+
+            <p>• Service details, Trade Compliance/ Regulatory Requirements</p>
+
+            <p>• Knowledge and Insights on Trade, Logistics, Finance, Supply Chains</p>
+          </div>
+
+          <div className="container-cc">
+            <h4 className="headed">Stage 1:</h4>
+
+            <span style={{ fontSize: '20px', display: 'flex', alignItems: 'center', fontWeight: 'bold' }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+                width="40"
+                height="40"
+                role="img"
+              >
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M12.613 7h-1.576"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#FBDC00"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M7 12.85a5.85 5.85 0 1 0 0-11.7 5.85 5.85 0 0 0 0 11.7Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#fff"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M9.383 4.371 5.72 5.652a.11.11 0 0 0-.068.068L4.37 9.383a.21.21 0 0 0 .246.246L8.28 8.348a.109.109 0 0 0 .068-.068l1.28-3.663a.21.21 0 0 0-.245-.246Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  fill="#221F1F"
+                  d="M7 7.762a.762.762 0 1 0 0-1.524.762.762 0 0 0 0 1.524Z"
+                />
+                <path
+                  className="ic-a-discover_svg__ic_a_discover"
+                  stroke="#221F1F"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0.264"
+                  d="M7 1.387v1.576m0 9.65v-1.576M1.387 7h1.576"
+                />
+              </svg>
+              Discover
+            </span>
+
+            <p>• Spot and Contract Rates for Logistics</p>
+
+            <p>• Service details, Trade Compliance/ Regulatory Requirements</p>
+
+            <p>• Knowledge and Insights on Trade, Logistics, Finance, Supply Chains</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
       <div className="container6">
         <h2 className="heading" >Industries Served</h2>
         <div className="image-container">
@@ -2598,7 +2876,7 @@ const Inner = () => {
         />
       </div>
       <div
-        className="flex-container"
+        className="flex-container container-cont"
         style={{ background: "#ee3425", justifyContent: "space-evenly" }}
       >
         <div className="left-item container-k">
@@ -2808,6 +3086,10 @@ const Inner = () => {
           </button>
         </div>
       </div>
+      <div style={{ background: "#fbdc00"}}>
+        <div style={{background:"white",    borderBottomRightRadius: "100%", borderBottomLeftRadius: "100%",height:"100px"}}>
+
+        </div>
       <div className="flex-container" style={{ background: "#fbdc00", justifyContent: "center" }}>
         <div className="left-item container-l">
           {/* <img src={require("./images/trade-tech-home-1.webp")}  style={{height:"400px", width:"380px"}}/> */}
@@ -2816,7 +3098,8 @@ const Inner = () => {
             style={{ height: "170px", width: "206px", cursor: "pointer" }}
           />
         </div>
-        <div className="right-item container-l" >
+        <div className="right-item container-l" style={{alignItems: "start",
+  textAlign: "start"}} >
           {/* <img alt="productCheck" loading="lazy" width="280" height="360" decoding="async" data-nimg="1" className="styles_about_image__p8EBE" srcset="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=384&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75" /> */}
           <p
           >
@@ -2833,6 +3116,46 @@ const Inner = () => {
               <strong>Subscribe</strong>{" "}
             </button>
           </div>
+        </div>
+      </div>
+      </div>
+      <div className="container-xx">
+        <div className="xx-child">
+          <a  className="xx-a">
+            Products
+          </a>
+          <svg className="transition" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" ><path className="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg>
+        </div>
+        
+        <div className="xx-child">
+          <a className="xx-a">
+            Products
+          </a>
+          <svg className="transition" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" ><path className="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg>
+        </div>
+        <div className="xx-child">
+          <a className="xx-a">
+            Products
+          </a>
+          <svg className="transition" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" ><path className="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg>
+        </div>
+        <div className="xx-child">
+          <a className="xx-a">
+            Products
+          </a>
+          <svg className="transition" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" ><path className="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg>
+        </div>
+        <div className="xx-child">
+          <a className="xx-a">
+            Products
+          </a>
+          <svg className="transition" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img"><path className="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg>
+        </div>
+        <div className="xx-child">
+          <a style={{fontFamily:"'Ubuntu',san-serif", fontSize:"20px"}}>
+            Contact Us
+          </a>
+          {/* <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" className="styles_arrow_icon__CKe8N "><path className="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg> */}
         </div>
       </div>
 
@@ -3237,13 +3560,13 @@ const Inner = () => {
         </div>
       </div>
       <div className="container9">
-        <div className="xyz" style={{ fontFamily: "'Ubuntu'", fontSize: "12px", display: "flex", alignItems: "center", marginBottom: "5px" }}>
+        <div className="xyz xyz1" style={{ fontFamily: "'Ubuntu'", fontSize: "12px", display: "flex", alignItems: "center", marginBottom: "5px" }}>
           <span style={{ marginRight: "30px", margin: "20px" }}>
             <strong>© 2023 Cogo Universe PTE. All rights reserved.</strong>
           </span>
-          <strong><a href="#" style={{ textDecoration: "none" }}>Terms and Conditions | Cookie policy | Privacy and Data Protection Policy</a></strong>
+          <strong><a className="terms" href="#" style={{ textDecoration: "none" }}>Terms and Conditions | Cookie policy | Privacy and Data Protection Policy</a></strong>
         </div>
-        <div className="xyz" style={{ display: "flex", alignItems: "center" }}>
+        <div className="xyz xyz2" style={{ display: "flex", alignItems: "center" }}>
           <img src={require("./images/globe.webp")}
             style={{ height: "20px", width: "20px", cursor: "pointer", marginBottom: "5px" }} />
           <span style={{ marginLeft: "10px", marginRight: "20px", fontFamily: "'PT Sans'", fontSize: "15px", marginBottom: "5px" }}> English (IN)  </span>
