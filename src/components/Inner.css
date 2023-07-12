@@ -402,6 +402,9 @@ width: 200px;
   flex-basis: 343px;
   
 }
+.hid-cont{
+  display:none;
+}
 @keyframes move {
   from {
     left: -100%;
@@ -942,5 +945,15 @@ a:hover {
   .container-k p{
     padding:20px;
     box-sizing: border-box;
+  }
+  .hid-cont{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 40px;
+
+  }
+  .container3{
+    display:none;
   }
 }
