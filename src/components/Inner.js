@@ -3679,6 +3679,7 @@ const Inner = () => {
         </div>
         <div className="right-item">
           <img
+          className="mov-img"
             src={require("./images/trade-tech-home-1.webp")}
             height="400"
             width="380"

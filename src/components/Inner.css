@@ -413,6 +413,24 @@ width: 200px;
     left: 100%;
   }
 }
+.mov-img{
+  animation-name:move-image;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+@keyframes move-image{
+  0% {
+    transform: translateY(0);
+}
+
+50% {
+    transform: translateY(-10px);
+}
+100% {
+    transform: translateY(0);
+}
+}
 
 .container4 {
   display: flex;
