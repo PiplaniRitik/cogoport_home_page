@@ -4,6 +4,12 @@ import "./Inner.css";
 const Inner = () => {
   return (
     <div className="Inner-Container">
+
+
+      {/* Section-1-start */}
+
+
+
       <div className="flex-container container-a"
        style={{
         backgroundImage: "url(https://cdn.cogoport.io/cms-prod/cogo_public/vault/original/home-banner-background-1.webp)",
@@ -44,6 +50,16 @@ const Inner = () => {
           />
         </div>
       </div>
+
+
+      {/* Section-1-end */}
+
+
+
+
+      {/* Section-2-start */}
+
+
       <div className="flex-container-horizontal">
         {/* <span  style={{display:"flex", flexDirection:"row"}}> */}
         <div className="flex-item container-f">
@@ -67,6 +83,16 @@ const Inner = () => {
         </div>
         {/* </span> */}
       </div>
+
+
+      {/* section-2-end */}
+
+
+
+      {/* section-3-start */}
+
+
+
       <div className="flex-container2">
         <div className="left-item">
           <p
@@ -89,6 +115,15 @@ const Inner = () => {
           />
         </div>
       </div>
+
+      {/* section-3-end */}
+
+
+
+
+      {/* section-4-start */}
+
+
       <div className="hid-cont">
       <div>
   <h3 className="h3-sizing" style={{textAlign:"start"}} >Our Products</h3>
@@ -2951,6 +2986,13 @@ const Inner = () => {
           </div>
         </div>
       </div>
+
+      {/* section-4-end */}
+
+
+      {/* section-5-start */}
+
+
       <div className="container-anime">
         <h3>Trusted By</h3>
         <div className="child_container-anime">
@@ -2982,6 +3024,13 @@ const Inner = () => {
           </div>
         </div>
       </div>
+
+      {/* section-5-end */}
+
+
+
+      {/* section-6-start */}
+
 
       <div className="container4">
         <div className="text4">
@@ -3018,6 +3067,12 @@ const Inner = () => {
           style={{ height: "auto", width: "100%" }}
         />
       </div> */}
+
+      {/* section-6-end */}
+
+
+      {/* section-7-start */}
+
 
 <div className="flex-container-a">
       <h3 style={{ fontSize: '28px', fontFamily: 'Ubuntu, sans-serif' }}>
@@ -3290,6 +3345,13 @@ const Inner = () => {
         </div>
       </div>
     </div>
+
+
+    {/* section-7-end */}
+
+
+    {/* section-8-start */}
+
 
       <div className="container6">
         <h2 className="heading" >Industries Served</h2>
@@ -3661,6 +3723,14 @@ const Inner = () => {
           </div>
         </div>
       </div>
+
+      {/* section-8-end */}
+
+
+
+      {/* section-9-start */}
+
+
       <div className="flex-container container-j" style={{ background: "#fffef2" }}>
         <div className="left-item">
           <p >
@@ -3687,12 +3757,25 @@ const Inner = () => {
           />
         </div>
       </div>
+
+      {/* section-9end */}
+
+
+
+      {/* section-10-start */}
+
+
       <div className="container7">
         <img
           src={require("./images/Screenshot (78).png")}
           style={{ height: "auto", width: "100%", cursor: "pointer" }}
         />
       </div>
+
+      {/* section-10-end */}
+
+
+      {/* section-11-start */}
       <div
         className="flex-container container-cont"
         style={{ background: "#ee3425", justifyContent: "space-evenly" }}
@@ -3743,6 +3826,13 @@ const Inner = () => {
           {/* <img alt="productCheck" loading="lazy" width="280" height="360" decoding="async" data-nimg="1" className="styles_about_image__p8EBE" srcset="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=384&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Ftrade-tech-home-1.webp&amp;w=640&amp;q=75" /> */}
         </div>
       </div>
+
+      {/* section-11-end */}
+
+
+      {/* section-12-start */}
+
+
       <div className="container5" >
         <h2
           className="heading"
@@ -3908,6 +3998,13 @@ const Inner = () => {
         <div style={{background:"white",    borderBottomRightRadius: "100%", borderBottomLeftRadius: "100%",height:"100px"}}>
 
         </div>
+
+        {/* section-12-end */}
+
+
+        {/* section-13-start */}
+
+
       <div className="flex-container" style={{ background: "#fbdc00", justifyContent: "center" }}>
         <div className="left-item container-l">
           {/* <img src={require("./images/trade-tech-home-1.webp")}  style={{height:"400px", width:"380px"}}/> */}
@@ -3937,6 +4034,13 @@ const Inner = () => {
         </div>
       </div>
       </div>
+
+      {/* section-13-end */}
+
+
+      {/* section-14-start */}
+
+
       <div className="container-xx">
         <div className="xx-child">
           <a  className="xx-a">
@@ -3976,6 +4080,7 @@ const Inner = () => {
           {/* <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" className="styles_arrow_icon__CKe8N "><path className="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg> */}
         </div>
       </div>
+
 
       <div className="flex-container8">
 
@@ -4282,6 +4387,13 @@ const Inner = () => {
           </div>
         </div>
       </div>
+
+      {/* section-14-end */}
+
+
+      {/* section-15-start */}
+
+
       <div className="flex-container8 footer" style={{ background: "#ebbe00" }}>
         <div className="lists-container">
           <div className="list">
@@ -4377,6 +4489,13 @@ const Inner = () => {
           {/* Add more lists here */}
         </div>
       </div>
+
+      {/* section-15-end */}
+
+
+      {/* section-16-start */}
+
+
       <div className="container9">
         <div className="xyz xyz1" style={{ fontFamily: "'Ubuntu'", fontSize: "12px", display: "flex", alignItems: "center", marginBottom: "5px" }}>
           <span style={{ marginRight: "30px", margin: "20px" }}>
@@ -4395,6 +4514,8 @@ const Inner = () => {
           </span>
         </div>
       </div>
+
+      {/* section-16-end */}
     </div>
   );
 };
